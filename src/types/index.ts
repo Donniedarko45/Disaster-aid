@@ -47,10 +47,12 @@ export interface Shelter {
   id: string;
   name: string;
   address: string;
-  pincode: string;
-  capacity: number;
+  latitude: number;
+  longitude: number;
+  rating: number;
+  organizationType: string;
   currentOccupancy: number;
+  capacity: number;
   contactNumber: string;
   facilities: string[];
-  organizationType: 'NGO' | 'Government';
 }
